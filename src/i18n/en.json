@@ -1,0 +1,23 @@
+{
+  "nav.home": "Home",
+  "nav.about": "About",
+  "nav.contact": "Contact",
+  "nav.works": "Works",
+  "home.hero.title": "Veora",
+  "home.hero.subtitle": "Music & Art",
+  "home.selectedWorks": "Selected Works",
+  "home.services": "Services",
+  "home.about": "About",
+  "home.faq": "FAQ",
+  "about.intro": "About",
+  "about.experience": "Experience",
+  "about.education": "Education",
+  "contact.title": "Contact",
+  "contact.details": "Get in touch",
+  "works.title": "Works",
+  "works.all": "All Works",
+  "works.details": "Work Details",
+  "footer.copyright": "All rights reserved.",
+  "common.loading": "Loading...",
+  "common.error": "Something went wrong"
+}

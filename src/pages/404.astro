@@ -1,15 +1,15 @@
 ---
 // layout
-import Layout from "../layouts/Layout.astro";
+import MainLayout from "../shared/components/MainLayout.astro";
 
 // components
-import Container from "../components/elements/Container.astro";
-import Heading from "../components/elements/Heading.astro";
-import Text from "../components/elements/Text.astro";
-import Link from "../components/elements/Link.astro";
+import Container from "../shared/components/Container.astro";
+import Heading from "../shared/components/Heading.astro";
+import Text from "../shared/components/Text.astro";
+import Link from "../shared/components/Link.astro";
 ---
 
-<Layout 
+<MainLayout 
     title="Page Not Found"
     description="404 page description"
 >
@@ -21,4 +21,4 @@ import Link from "../components/elements/Link.astro";
         
         <Link variant={'button'} href="/">Go back to the homepage</Link>
     </Container>
-</Layout>
+</MainLayout>

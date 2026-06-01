@@ -1,18 +1,18 @@
 ---
 // layout
-import Layout from "../layouts/Layout.astro";
+import MainLayout from "../shared/components/MainLayout.astro";
 
 // components
-import Intro from "../components/sections/about/Intro.astro";
-import Experience from "../components/sections/about/Experience.astro";
-import Education from "../components/sections/about/Education.astro";
+import Intro from "../features/about/components/Intro.astro";
+import Experience from "../features/about/components/Experience.astro";
+import Education from "../features/about/components/Education.astro";
 ---
 
-<Layout 
+<MainLayout 
     title="About"
     description="About me page description."
 >
     <Intro />
     <Experience />
     <Education />
-</Layout>
+</MainLayout>

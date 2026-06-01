@@ -1,12 +1,12 @@
 ---
 // layout
-import Layout from "../../layouts/Layout.astro";
+import MainLayout from "../../shared/components/MainLayout.astro";
 
 // components
-import Heading from "../../components/elements/Heading.astro";
-import Container from "../../components/elements/Container.astro";
-import Work from "../../components/elements/Work.astro";
-import Pagination from "../../components/sections/works/Pagination.astro";
+import Heading from "../../shared/components/Heading.astro";
+import Container from "../../shared/components/Container.astro";
+import Work from "../../shared/components/Work.astro";
+import Pagination from "../../features/works/components/Pagination.astro";
 
 // routing
 import type { GetStaticPaths } from "astro";
@@ -20,7 +20,7 @@ export const getStaticPaths = (async ({paginate}) => {
 const { page } = Astro.props;
 ---
 
-<Layout 
+<MainLayout 
     title=`Works - Page ${page.currentPage}`
     description="Works page list description"
 >
@@ -44,4 +44,4 @@ const { page } = Astro.props;
         </div>
     </Container>
     
-</Layout>
+</MainLayout>

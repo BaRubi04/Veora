@@ -1,0 +1,23 @@
+{
+  "nav.home": "Inicio",
+  "nav.about": "Acerca de",
+  "nav.contact": "Contacto",
+  "nav.works": "Trabajos",
+  "home.hero.title": "Veora",
+  "home.hero.subtitle": "Música y Arte",
+  "home.selectedWorks": "Trabajos Seleccionados",
+  "home.services": "Servicios",
+  "home.about": "Acerca de",
+  "home.faq": "Preguntas Frecuentes",
+  "about.intro": "Acerca de",
+  "about.experience": "Experiencia",
+  "about.education": "Educación",
+  "contact.title": "Contacto",
+  "contact.details": "Ponte en contacto",
+  "works.title": "Trabajos",
+  "works.all": "Todos los Trabajos",
+  "works.details": "Detalles del Trabajo",
+  "footer.copyright": "Todos los derechos reservados.",
+  "common.loading": "Cargando...",
+  "common.error": "Algo salió mal"
+}

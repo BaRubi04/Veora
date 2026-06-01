@@ -1,16 +1,16 @@
 ---
 // layout 
-import Layout from "../layouts/Layout.astro"
+import MainLayout from "../shared/components/MainLayout.astro"
 
 // components
-import Intro from "../components/sections/contact/Intro.astro"
-import ContactDetails from "../components/sections/contact/ContactDetails.astro"
+import Intro from "../features/contact/components/Intro.astro"
+import ContactDetails from "../features/contact/components/ContactDetails.astro"
 ---
 
-<Layout 
+<MainLayout 
     title="Contact"
     description="Contact page description."
 >
     <Intro />
     <ContactDetails />
-</Layout>
+</MainLayout>
