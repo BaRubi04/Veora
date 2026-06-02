@@ -1,0 +1,47 @@
+---
+// stylesheet
+import "../../styles/global.css";
+
+// components
+import BaseHead from "./BaseHead.astro";
+import Wrapper from "./Wrapper.astro";
+import NavBar from "./Navigation.astro";
+import Footer from "./Footer.astro";
+
+// assets
+import bg from "../../assets/images/bg.jpg";
+import { getImage } from "astro:assets";
+const backgroundImage = await getImage({src: bg, format:'jpg'})
+
+// props
+const {title, description, titleTemplate, siteName, ogImage, twitterSite, themeColor, locale, ...seoProps } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<BaseHead 
+		title={title}
+      	description={description}
+      	titleTemplate={titleTemplate}
+    	siteName={siteName}
+      	ogImage={ogImage}
+      	twitterSite={twitterSite}
+      	themeColor={themeColor}
+      	locale={locale}
+      	{...seoProps}
+	/>
+	<body style=`background-image: url(${backgroundImage.src})` class="bg-cover bg-center bg-no-repeat bg-fixed  box-border">
+		<!-- Background noise effect -->
+		<div class="noise-overlay"></div>
+		<!-- Wrapper component to make sure all content on the website is above the noise filter background -->
+		<Wrapper>
+			<NavBar />
+			<main class="flex flex-col xl:gap-48 lg:gap-40 gap-28">
+				<slot />
+			</main>
+			<Footer />
+		</Wrapper>
+	</body>
+</html>
+
+

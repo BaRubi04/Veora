@@ -1,16 +1,16 @@
 ---
 // Layout
-import Layout from "../../layouts/Layout.astro";
+import MainLayout from "../../shared/components/MainLayout.astro";
 
 // Styling
 import "../../styles/markdown.css";
 
 // Components
-import Container from "../../components/elements/Container.astro";
-import Heading from "../../components/elements/Heading.astro";
-import Text from "../../components/elements/Text.astro";
-import ImageContainer from "../../components/elements/ImageContainer.astro";
-import Link from "../../components/elements/Link.astro";
+import Container from "../../shared/components/Container.astro";
+import Heading from "../../shared/components/Heading.astro";
+import Text from "../../shared/components/Text.astro";
+import ImageContainer from "../../shared/components/ImageContainer.astro";
+import Link from "../../shared/components/Link.astro";
 
 // Routing
 import type { GetStaticPaths } from "astro";
@@ -40,7 +40,7 @@ const details = [
 ]
 ---
 
-<Layout 
+<MainLayout 
     title={`Work - ${title}`}
     description={description}
 >
@@ -79,4 +79,4 @@ const details = [
         </div>
         <Link variant={'button'} href="/works">All Works</Link>
     </Container>
-</Layout>
+</MainLayout>
